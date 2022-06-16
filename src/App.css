@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
+/** @format */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  width: 250px;
+  aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+label {
+  width: max-content;
+  color: tomato;
+  border-bottom: 1px solid tomato;
+  font-size: 12px;
+}
+
+.card .stars > * {
+  color: gold;
+}
+
+.new_pin_form {
+  width: 250px;
+}
+
+form {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  overflow: visible;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 1px solid tomato;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 0.75rem;
+}
+
+.button {
+  border: none;
+  padding: 0.2rem;
   color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.submitButton,
+.logout {
+  background-color: tomato;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login {
+  background-color: teal;
+  margin-inline: 0.5rem;
+}
+
+.register {
+  background-color: slateblue;
+}
+
+.buttons,
+.logout {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }

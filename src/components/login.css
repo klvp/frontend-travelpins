@@ -1,0 +1,56 @@
+/** @format */
+
+.login_container {
+  width: 20rem;
+  height: max-content;
+  border-radius: 5px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  padding-block: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid teal;
+  outline: none;
+  font-size: 0.9rem;
+  padding: 0.25rem;
+}
+
+input::placeholder {
+  font-size: 0.75rem;
+}
+
+.login_container button {
+  padding: 0.25rem;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: teal;
+}
+
+.logo {
+  color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  color: red;
+}
+
+.login_close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
